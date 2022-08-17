@@ -12,7 +12,7 @@ export default function Index() {
         personId: ''
     })
     const debouncedParam = useDebounce(param, 2000)
-    console.log(debouncedParam,'aaa');
+    console.log(debouncedParam, 'aaa');
 
     const [list, setList] = useState([])
     const [users, setUsers] = useState([])
@@ -22,7 +22,6 @@ export default function Index() {
             .then(async res => {
                 // console.log( await res.json(),'resss');
                 setList(await res.json())
-                console.log(list, 'list11');
             })
     }, [debouncedParam])
     useMount(() => {
