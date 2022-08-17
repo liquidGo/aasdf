@@ -1,12 +1,11 @@
 import React from "react";
 import "./App.css";
-import Index from './screens/project-list/Index'
+import Index from "./screens/project-list/Index";
 
 function App() {
   return (
-
-    
-    <div className="App"><Index/>
+    <div className="App">
+      <Index />
     </div>
   );
 }
